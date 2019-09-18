@@ -1,5 +1,17 @@
+/****************************
+      General and Main Selectors
+****************************/
+
 * {
   box-sizing: border-box;
+}
+
+input {
+  margin-top: 2em;
+  padding: 3px;
+  width: 40%;
+  border-color: lightgray;
+  border-radius: 8px;
 }
 
 img {
@@ -7,6 +19,14 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 2em;
+}
+
+/****************************
+      Class Selectors
+****************************/
+
+.search {
+  text-align: center;
 }
 
 .wrapper {
@@ -29,8 +49,4 @@ img {
     grid-template-columns: auto auto auto auto;
     grid-gap: 3.5em;
   }
-
-  /*.item {
-    margin: auto;
-  }*/
 }
