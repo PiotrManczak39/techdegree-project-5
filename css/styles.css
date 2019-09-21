@@ -44,7 +44,7 @@ img {
       Media Queries
 ****************************/
 
-@media(min-width: 1300px) {
+@media(min-width: 768px) {
   .wrapper {
     margin: auto;
   }
@@ -58,5 +58,6 @@ img {
 
   img {
     padding: 0px;
+    max-width: 100%;
   }
 }

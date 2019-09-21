@@ -1,6 +1,10 @@
 
 $(document).ready(function() {
-       $("#lightgallery").lightGallery();
+       $("#lightgallery").lightGallery({
+         mode: 'lg-slide',
+         cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)',
+         speed:2000
+       });
    });
 
 const searchBar = document.querySelector('.search-game');
