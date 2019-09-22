@@ -52,7 +52,7 @@ img {
   .grid {
     display: grid;
     overflow: hidden;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 2.2em;
   }
 

@@ -3,7 +3,7 @@ $(document).ready(function() {
        $("#lightgallery").lightGallery({
          mode: 'lg-slide',
          cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)',
-         speed:2000
+         speed:1800
        });
    });
 
@@ -14,9 +14,11 @@ searchBar.addEventListener('keyup', function(e) {
   Array.from(images).forEach(function(image){
     const description = image.getAttribute('alt')
     if (description.toLowerCase().indexOf(term) == -1) {
-      image.style.display = 'none';
+      let space = image.parentElement;
+      space.style.display = 'none';
     } else {
-      image.style.display = 'block';
+      let space = image.parentElement;
+      space.style.display = 'block';
     }
   });
 });
